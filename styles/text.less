@@ -4,9 +4,9 @@ h3 {
   line-height: 1em;
   margin-bottom: 15px
 }
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.2em; }
+h1 { font-size: @ui-size * 2; }
+h2 { font-size: @ui-size * 1.5; }
+h3 { font-size: @ui-size * 1.2; }
 
 p {
   line-height: 1.6;
@@ -34,7 +34,7 @@ code {
 
 .selected { .text(highlight); }
 
-.text-smaller { font-size: 0.9em; }
+.text-smaller { font-size: @ui-size * 0.9; }
 
 .text-subtle { .text(subtle); }
 .text-highlight { .text(highlight); }

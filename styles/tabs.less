@@ -32,7 +32,7 @@
     padding: 0;
     margin: 0;
     height: inherit;
-    font-size: inherit;
+    font-size: @ui-size;
     line-height: @ui-tab-height;
     color: @tab-text-color;
     background-color: @tab-background-color;
@@ -60,6 +60,7 @@
     .title {
       text-align: center;
       margin: 0 @title-padding;
+      line-height: @ui-size * 1.8;
     }
 
     // VCS coloring ----------------------
@@ -73,8 +74,8 @@
       margin-right: .3em;
       width: auto;
       height: auto;
-      line-height: 1;
-      font-size: 1.125em;
+      line-height: @ui-size;
+      font-size: @ui-size * 0.65;
       vertical-align: -.0625em; // Adjust center for the 0.1em font-size increase
     }
 
@@ -84,7 +85,7 @@
       top: @icon-padding-top;
       right: @icon-padding-right;
       z-index: 2;
-      font-size: 1em;
+      font-size: @ui-size * 0.6;
       width: 1.5em;
       height: 1.5em;
       line-height: 1.5;
@@ -103,7 +104,7 @@
       }
       &::before {
         z-index: 1;
-        font-size: 1.1em;
+        font-size: @ui-size;
         vertical-align: -.05em; // Adjust center for the 0.1em font-size increase
         width: auto;
         height: auto;
